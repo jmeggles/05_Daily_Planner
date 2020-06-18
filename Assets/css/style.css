@@ -54,12 +54,12 @@ textarea{
 }
 
 .present {
-  background-color: magenta;
+  background-color: #f57e7e;
   color: white;
 }
 
 .future {
-  background-color: aqua;
+  background-color: #09b9ad;
   color: white;
 }
 

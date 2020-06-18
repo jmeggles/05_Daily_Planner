@@ -1,11 +1,79 @@
-var taskInput = document.querySelector("#task-text");
-var taskForm = document.querySelector("#task-form");
-var taskList = document.querySelector("#task-list");
-var taskCountSpan = document.querySelector("#task-count");
-
-
 // GIVEN I am using a daily planner to create a schedule
-// WHEN I open the planner, items should appear from last save
+const NOW = moment();
+var schedule = {
+    '13': "walk dogs!"
+};
+
+
+function buildRow(hour) {
+    var time = moment(hour, "H");
+    var timeClass = "future";
+    var task = schedule[hour];
+
+    if (time.isSame(NOW, "hour")) {
+        timeClass = "present"
+    }
+    else if (time.isBefore(NOW)) {
+        timeClass = "past"
+    }
+
+    var parentEl = $("<div>")
+    parentEl.addClass("row time-block")
+
+    var hourEl = $("<div>")
+    hourEl.addClass("col-1 hour")
+    hourEl.text(time.format("hA"))
+
+    var textEl = $("<textarea>")
+    textEl.addClass("col-10 description " + timeClass)
+    textEl.val(task)
+
+    var btn = $("<button>")
+    btn.addClass("saveBtn col-1")
+
+    var icon = $("<i>")
+    icon.addClass("fa fa-save")
+
+    btn.append(icon)
+    parentEl.append(hourEl, textEl, btn)
+
+    $(".container").append(parentEl)
+}
+
+for (var i = 12; i <= 20; i++) {
+    buildRow(i)
+}
+
+var obj = {
+    name: "Ben",
+    job: "tutor"
+}
+var array = ['cat', 'dog', 'iguana']
+console.log(array)
+console.log(array[1])
+var i = 2
+console.log(array[i])
+
+console.log(obj)
+console.log(obj.name)
+console.log(obj['name'])
+
+var key = 'name'
+console.log(obj[key])
+
+key = "job"
+console.log(obj[key])
+
+obj.age = 32
+console.log(obj)
+
+key = "hasPets"
+obj[key] = true
+console.log(obj)
+
+
+
+// WHEN I open the planner
 
 
 
@@ -18,26 +86,7 @@ var taskCountSpan = document.querySelector("#task-count");
 
 
 // THEN I am presented with timeblocks for standard business hours
-function renderTasks() {
-    // Clear taskList element and update taskCountSpan
-    taskList.innerHTML = "";
-    taskCountSpan.textContent = task.length;
-  
-    // Render a new li for each task........don't want to make a new line, only write withint one
-    for (var i = 0; i < task.length; i++) {
-      var task = tasks[i];
-  
-      var li = document.createElement("li");
-      li.textContent = task;
-      li.setAttribute("data-index", i);
-  
-      var button = document.createElement("button");
-      button.textContent = "Complete";
-  
-      li.appendChild(button);
-      taskList.appendChild(li);
-    }
-  }
+
 
 
 // WHEN I view the timeblocks for that day
@@ -56,25 +105,12 @@ function renderTasks() {
 
 
 
-// WHEN I click the save button for that timeblock THEN the text for that event is saved in local storage
-taskForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-  
-    var taskText = taskInput.value.trim();
-  
-    // Return from function early if submitted taskText is blank
-    if (taskText === "") {
-      return;
-    }
-  
-    // Add new task to array, clear the input ......refresh page??
-    // task.push(taskText);
-    // taskInput.value = "";
-  
-    // Re-render the list
-    rendertasks();
-  });
-  
+// WHEN I click the save button for that timeblock
+
+
+
+// THEN the text for that event is saved in local storage
+
 
 
 // WHEN I refresh the page
@@ -82,5 +118,3 @@ taskForm.addEventListener("submit", function(event) {
 
 
 // THEN the saved events persist
-
-
