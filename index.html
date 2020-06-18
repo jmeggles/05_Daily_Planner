@@ -7,7 +7,7 @@
     <!-- bootstrap library -->
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
@@ -19,27 +19,52 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/css/style.css" />
+ 
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3" id="jumboText">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <!-- daily timeblaocks for each hour of the day using the same names from css-->
     <div class="container">
-        <div class="row"
+      <h3></h3>
+      <div class="plan">
+          <form id="plan-form" method="POST">
+          <!-- <label for="task-text">Add a task:</label> -->
+          <!-- <input type="text" placeholder="What needs to be done?" name="task-text" id="task-text" /> -->
+        </form>
+        <p>Task Count: <span id="task-count">0</span></p>
+        <ul id="task-list">
+          <li>0800</li>
+          <li>0900</li>
+          <li>1000</li>
+          <li>1100</li>
+          <li>1200</li>
+          <li>1300</li>
+          <li>1400</li>
+          <li>1500</li>
+          <li>1600</li>
+          <li>1700</li>
+          <li>1800</li>
+        </ul>
+      </div>
+        <!-- <div class="row" 
           <div class="column"
       <!-- Timeblocks go here -->
-          </div>
-        </div>
+          <!-- </div>
+        </div> -->
     </div>
     <!-- jquery library -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/javascript/script.js"></script>
+
   </body>
 </html>
 
