@@ -1,7 +1,9 @@
 // GIVEN I am using a daily planner to create a schedule
+// WHEN I open the planner
+// THEN the current day is displayed at the top of the calendar
 const NOW = moment();
 var schedule = {
-    '13': "walk dogs!"
+    '14': ""
 };
 
 
@@ -44,47 +46,8 @@ for (var i = 12; i <= 20; i++) {
     buildRow(i)
 }
 
-var obj = {
-    name: "Ben",
-    job: "tutor"
-}
-var array = ['cat', 'dog', 'iguana']
-console.log(array)
-console.log(array[1])
-var i = 2
-console.log(array[i])
-
-console.log(obj)
-console.log(obj.name)
-console.log(obj['name'])
-
-var key = 'name'
-console.log(obj[key])
-
-key = "job"
-console.log(obj[key])
-
-obj.age = 32
-console.log(obj)
-
-key = "hasPets"
-obj[key] = true
-console.log(obj)
-
-
-
-// WHEN I open the planner
-
-
-
-// THEN the current day is displayed at the top of the calendar
-
-
 
 // WHEN I scroll down
-
-
-
 // THEN I am presented with timeblocks for standard business hours
 
 
