@@ -1,5 +1,5 @@
 # The Daily Planner
-This project is a Code Quiz using random subjects.  Questions are given along with a choice of answers to choose from using web  and moments.js library.  
+This is a daily work planner to keep track of tasks throughout the day.    
 
 <img src="" width=600>
 <img src="" width=600>
@@ -8,7 +8,7 @@ This project is a Code Quiz using random subjects.  Questions are given along wi
 - (https://
 
 ## How it works
-  
+Click the link which opens the planner.  Add events or tasks in the allotted time sections.  These can be saved to local storage for quick access.  The color of that task will reflect the time of day based on past (grey), present, or future.    
 
 ### Criteria needed
 ```
@@ -28,7 +28,7 @@ THEN the saved events persist
 ```
 
 ## Motivation
-This project was the second assignemnt using web APIs. It will be useful to keep track of daily activities as projects get more involved and time can easily get away.  This project will assist in better organization of tasks.
+This project was the second assignemnt using web APIs. It will be useful to keep track of daily activities as projects get more involved and time can easily get away.  This project will assist in better organization of tasks which can be used in many ways.
 
 ## Tech/framework used
 - JQuery
@@ -51,6 +51,8 @@ None
 - Ben Benson WebDev Tutoring
 - (https://www.w3schools.com/)
 - (https://momentjs.com/) 
+- Bootstrap and other library links are in HTML
+
 
 ### Notes
-This was quite challenging due to the pace of learning everything needed in a timely manner.  I will update this in the futre using additional info as I learn more in and out of class.
+Although this used less codes than previous projects, it was still quite challenging to utilize what I learned thus far and apply it accurately.  
