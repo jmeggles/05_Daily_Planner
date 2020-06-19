@@ -19,7 +19,7 @@ textarea{
   color: #818181; 
   border-radius: 0;
   border-bottom: 10px solid #09b9ad;
-  background-image: linear-gradient(white, #81f5ed, #09b9ad);
+  background-image: linear-gradient(#f8fad8, white, #81f5ed, #09b9ad);
 }
 
 #jumboText {
@@ -54,12 +54,12 @@ textarea{
 }
 
 .present {
-  background-color: #f57e7e;
+  background-color: #ff6961;
   color: white;
 }
 
 .future {
-  background-color: #09b9ad;
+  background-color: #77dd77;
   color: white;
 }
 

@@ -8,7 +8,7 @@ This is a daily work planner to keep track of tasks throughout the day.
 - (https://
 
 ## How it works
-Click the link which opens the planner.  Add events or tasks in the allotted time sections.  These can be saved to local storage for quick access.  The color of that task will reflect the time of day based on past (grey), present, or future.    
+Click the link which opens the planner.  Add events or tasks in the allotted timeblocks. The color of that block will reflect the time of day based on past (grey), present (red), or future (green), which is to let you know if/when that task should be completed.   These can be saved using the blue save button next to that timeblock.  It saves to local storage for quick access.  
 
 ### Criteria needed
 ```
