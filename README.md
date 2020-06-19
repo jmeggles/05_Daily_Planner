@@ -2,7 +2,6 @@
 This is a daily work planner to keep track of tasks throughout the day.    
 
 <img src="/Assets/images/screenshot1.png" width=600>
-<img src="" width=600>
 
 - (https://https://github.com/jmeggles/05_Daily_Planner)
 - (https://https://jmeggles.github.io/05_Daily_Planner/)
@@ -59,4 +58,4 @@ None
 
 
 ### Notes
-Although this used less codes than previous projects, it was still quite challenging to utilize what I learned thus far and apply it accurately.  Trying to know how to apply fontawesome into the code wasn't easy but I was shown how to keep the code to a minimum by omitting it in HTML, using it only in JS since it pulls from the library through the links attached in HTML.
+Although this used less code than previous projects, it was still quite challenging to utilize what I learned thus far and apply it accurately.  Trying to know how to apply fontawesome into the code wasn't easy but I was shown how to keep the code to a minimum by omitting it in HTML, using it only in JS since it pulls from the library through the links attached in HTML.
