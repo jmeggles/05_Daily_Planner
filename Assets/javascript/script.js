@@ -6,15 +6,21 @@ var schedule = {
     '14': ""
 };
 
-
+// WHEN I scroll down
+// THEN I am presented with timeblocks for standard business hours
 function buildRow(hour) {
     var time = moment(hour, "H");
+// THEN each timeblock is color coded to indicate it is in the future    
     var timeClass = "future";
     var task = schedule[hour];
 
+    
+//timeblock is color coded to indicate it is in the present
     if (time.isSame(NOW, "hour")) {
         timeClass = "present"
     }
+
+// timeblock is color coded to indicate it is in the past
     else if (time.isBefore(NOW)) {
         timeClass = "past"
     }
@@ -26,6 +32,7 @@ function buildRow(hour) {
     hourEl.addClass("col-1 hour")
     hourEl.text(time.format("hA"))
 
+    // THEN the text for that event is saved in local storage
     var textEl = $("<textarea>")
     textEl.addClass("col-10 description " + timeClass)
     textEl.val(task)
@@ -33,22 +40,22 @@ function buildRow(hour) {
     var btn = $("<button>")
     btn.addClass("saveBtn col-1")
 
+    // adding save button from fontawesome
     var icon = $("<i>")
     icon.addClass("fa fa-save")
-
+    
+    // applying save button 
     btn.append(icon)
     parentEl.append(hourEl, textEl, btn)
 
     $(".container").append(parentEl)
 }
-
-for (var i = 12; i <= 20; i++) {
+// adding all rows for the dsy
+for (var i = 8; i <= 18; i++) {
     buildRow(i)
 }
 
 
-// WHEN I scroll down
-// THEN I am presented with timeblocks for standard business hours
 
 
 
@@ -56,7 +63,7 @@ for (var i = 12; i <= 20; i++) {
 
 
 
-// THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+
 
 
 
@@ -64,7 +71,6 @@ for (var i = 12; i <= 20; i++) {
 
 
 
-// THEN I can enter an event
 
 
 
@@ -72,7 +78,7 @@ for (var i = 12; i <= 20; i++) {
 
 
 
-// THEN the text for that event is saved in local storage
+
 
 
 
@@ -80,4 +86,4 @@ for (var i = 12; i <= 20; i++) {
 
 
 
-// THEN the saved events persist
+// THEN the saved events keep with dom traversal

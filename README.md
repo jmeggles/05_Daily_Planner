@@ -28,13 +28,17 @@ THEN the saved events persist
 ```
 
 ## Motivation
-This project was the second assignemnt using web APIs. It will be useful to keep track of daily activities as projects get more involved and time can easily get away.  This project will assist in better organization of tasks which can be used in many ways.
+This project was the second assignemnt using web APIs (third party). It will be useful to keep track of daily activities as projects get more involved and time can easily get away.  This project will assist in better organization of tasks which can be used outside of the work schedule as well.
 
 ## Tech/framework used
 - JQuery
 - Javascript
 - CSS
 - HTML
+- CSS bootstrap
+- Javascript library
+- Moments.js
+- Fontawesome
 
 ## Versioning
 This is the only version but will update in the future.
@@ -50,9 +54,9 @@ None
 - Jorge Alvarez
 - Ben Benson WebDev Tutoring
 - (https://www.w3schools.com/)
-- (https://momentjs.com/) 
-- Bootstrap and other library links are in HTML
+
+
 
 
 ### Notes
-Although this used less codes than previous projects, it was still quite challenging to utilize what I learned thus far and apply it accurately.  
+Although this used less codes than previous projects, it was still quite challenging to utilize what I learned thus far and apply it accurately.  Trying to know how to apply fontawesome into the code wasn't easy but I was shown how to keep the code to a minimum by omitting it in HTML, using it only in JS since it pulls from the library through the links attached in HTML.
