@@ -79,13 +79,13 @@ function init() {
 }
 // WHEN I click the save button for that timeblock
 function storetasks() {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    window.localStorage.setItem("container", JSON.stringify(storedTasks));
 }
 // Task is submitted
-taskForm.addEventListener("submit", function (event) {
+textEl.addEventListener("saveBtn", function (event) {
     event.preventDefault();
 
-    var taskText = taskInput.value.trim();
+    const taskText = taskInput.value.trim();
 
     if (taskText === "") {
         return;
@@ -99,7 +99,7 @@ taskForm.addEventListener("submit", function (event) {
 });
 // WHEN I refresh the page
 taskList.addEventListener("click", function (event) {
-    var element = event.target;
+    const element = event.target;
 
     // If that element is a button...
     if (element.matches("saveBtn") === true) {
